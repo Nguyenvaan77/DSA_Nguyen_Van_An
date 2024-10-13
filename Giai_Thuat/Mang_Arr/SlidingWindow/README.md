@@ -36,4 +36,5 @@ Kỹ thuật cửa sổ trượt hoạt động bằng cách lướt 1 cửa s�
     + Bài toán: Cho 1 chuỗi kĩ tự nhập vào String, tìm số k là độ dài dài nhất của chuỗi con các kí tự khác nhau.
 3. [Bai_2_1 : Tìm độ dài và chuỗi có các kí tự khác nhau dài nhất](file:///Giai_Thuat/Mang_Arr/SlidingWindow/Bai_2_1.java)
     + Đầu vào như bài 2, in ra độ dài và chuỗi đó.
-4. []
+4. [Bai_3 : Tìm số chuỗi con có tổng các phần tử bé hơn 1 số K được nhập từ bàn phím](file:///Giai_Thuat/Mang_Arr/SlidingWindow/Bai_3.java)
+    + Đầu vào là 1 mảng gồm các INT , số K . xác định số chuỗi có tổng các phần tử bé hơn K.
