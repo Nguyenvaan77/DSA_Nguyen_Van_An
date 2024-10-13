@@ -1,3 +1,5 @@
+package Mang_Arr.SlidingWindow;
+
 import java.util.Scanner;
 
 public class Bai_1 {
