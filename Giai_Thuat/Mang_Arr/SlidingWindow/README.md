@@ -38,3 +38,5 @@ Kỹ thuật cửa sổ trượt hoạt động bằng cách lướt 1 cửa s�
     + Đầu vào như bài 2, in ra độ dài và chuỗi đó.
 4. [Bai_3 : Tìm số chuỗi con có tổng các phần tử bé hơn 1 số K được nhập từ bàn phím](file:///Giai_Thuat/Mang_Arr/SlidingWindow/Bai_3.java)
     + Đầu vào là 1 mảng gồm các INT , số K . xác định số chuỗi có tổng các phần tử bé hơn K.
+5. [Bai_3_1 : Tìm chuỗi con có tổng các phần tử bé hơn 1 số K được nhập từ bàn phím có số phần tử nhiều nhất](file:///Giai_Thuat/Mang_Arr/SlidingWindow/Bai_3_1.java)
+    + Đầu vào như 4.

@@ -1,4 +1,4 @@
-# Ignore IDE-specific files
+# Đây là khu vực gọi tên các file không muốn push lên github
 /.idea/
 *.iml
 /out/
