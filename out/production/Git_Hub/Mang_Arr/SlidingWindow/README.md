@@ -26,9 +26,14 @@ Kỹ thuật cửa sổ trượt hoạt động bằng cách lướt 1 cửa s�
    ```
 ## Áp dụng 
 1. Khi bạn cần tính toán trên đoạn cố định của Mảng hãy 1 chuỗi 
-2. Khi cần tối ưu hóa cho các bài toàn sử lí trên dãy con liên tiếp của 1 mảng
+2. Khi cần tối ưu hóa cho các bài toàn xử lí trên dãy con liên tiếp của 1 mảng
 
 ## Coding
 
-1. [Tìm tổng lớn nhất của dãy con liên tiếp có độ dài cố định](file:///Giai_Thuat/Mang_Arr/SlidingWindow/Bai_1.java)
+1. [Bai_1 : Tìm tổng lớn nhất của dãy con liên tiếp có độ dài cố định](file:///Giai_Thuat/Mang_Arr/SlidingWindow/Bai_1.java)
     + Bài toán: Cho một mảng số nguyên và một số k, tìm tổng lớn nhất của dãy con liên tiếp gồm k phần tử.
+2. [Bai_2 :Tìm độ dài chuỗi con có các kí tự khác nhau lớn nhất](file:///Giai_Thuat/Mang_Arr/SlidingWindow/Bai_2.java)
+    + Bài toán: Cho 1 chuỗi kĩ tự nhập vào String, tìm số k là độ dài dài nhất của chuỗi con các kí tự khác nhau.
+3. [Bai_2_1 : Tìm độ dài và chuỗi có các kí tự khác nhau dài nhất](file:///Giai_Thuat/Mang_Arr/SlidingWindow/Bai_2_1.java)
+    + Đầu vào như bài 2, in ra độ dài và chuỗi đó.
+4. []
