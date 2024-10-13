@@ -1,4 +1,4 @@
 # Ignore IDE-specific files
-.idea/
+/.idea/
 *.iml
-out/
+/out/
