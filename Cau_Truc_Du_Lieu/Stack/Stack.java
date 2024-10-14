@@ -1,9 +1,36 @@
 package Stack;
 
-public class Stack<T> {
+import java.util.Iterator;
+import java.util.Spliterator;
+import java.util.function.Consumer;
+
+public class Stack<T> implements Iterable{
     public Node<T> first;
     public Stack() {
         first = null;
+    }
+
+    @Override
+    public Iterator iterator() {
+        return new iterator();
+    }
+
+    public class iterator implements Iterator {
+        public Node<T> first = Stack.this.first;
+
+        @Override
+        public boolean hasNext() {
+            return first != null;
+        }
+
+        @Override
+        public Object next() {
+            if(!hasNext()) throw new RuntimeException();
+
+            T value = first.data;
+            first = first.next;
+            return  value;
+        }
     }
 
     public boolean isEmpty(){

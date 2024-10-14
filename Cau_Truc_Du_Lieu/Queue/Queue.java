@@ -1,7 +1,31 @@
 package Queue;
 
-public class Queue<T> {
-    Node<T> first;
+import java.util.Iterator;
+
+public class Queue<T> implements Iterable{
+    public Node<T> first;
+
+    public Iterator iterator(){
+        return new iter();
+    }
+
+    public class iter implements Iterator{
+        public Node<T> first = Queue.this.first;
+
+        @Override
+        public boolean hasNext() {
+            return first != null;
+        }
+
+        @Override
+        public Object next() {
+            if(!hasNext()) throw new RuntimeException();
+
+            T value = first.data;
+            first = first.next;
+            return value;
+        }
+    }
 
     public Queue() {
         first = null;
@@ -59,18 +83,6 @@ public class Queue<T> {
     public T peek(){
         if(isEmpty()) throw new RuntimeException();
 
-        Node other = first;
-
-        if(first.next == null){
-            T value = first.data;
-            first = null;
-            return value;
-        }
-
-        while(other.next.next != null){
-            other = other.next;
-        }
-
-        return (T) other.next.data;
+        return first.data;
     }
 }

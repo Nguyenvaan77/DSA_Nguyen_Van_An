@@ -13,7 +13,7 @@ Queue là một giao diện(Interface) trong gói java.util.
     +   **Thêm phần tử vào cuối** hàng đợi. Ví dụ queue_name.add(int 3)
     +   **`E e`** : phần tử `cần thêm`
     +   **`Trả về`** : `True` khi thêm thành công và Thả ngoại lệ Illegal khi không thêm được.
-3. `T poll()`
+3. `T pop()`
     +   **`Loại bỏ và trả về giá trị của phần tử đầu tiên trong dãy`**
     +   Nếu hàng đợi rỗng thì kết quả trả về là `null`
 4. `T peek()`
