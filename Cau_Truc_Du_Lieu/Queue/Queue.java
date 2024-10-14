@@ -19,6 +19,7 @@ public class Queue<T> {
         return count;
     }
 
+
     public boolean isEmpty() {
         return first == null;
     }
