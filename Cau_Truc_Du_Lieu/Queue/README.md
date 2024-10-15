@@ -7,6 +7,10 @@ Java cung cấp rất nhiều loại hàng đợi, ví dụ có thể kể đế
 3. `PriorityQueue`
 4. `LinkedList`
 ## Điểm chú ý
+Các lớp triển khai Queue
+
+![Ảnh](./Images/classtrienkhaiinterface.jpg) () 
+
 Queue là một giao diện(Interface) trong gói java.util.
 ## Các phương thức quan trọng của Queue API
 1. `boolean add(E e)`
@@ -19,3 +23,12 @@ Queue là một giao diện(Interface) trong gói java.util.
 4. `T peek()`
     +   **`Trả về giá trị đầu tiên của hàng đợi mà không loại bỏ nó`**
       +   Nếu hàng đợi rỗng thì kết quả trả về sẽ là `null`
+## `Các giao diện Interface mở rộng đáng chú ý của Hàng đợi`
+1. `Deque`
+   + Là giao diện mở rộng của Queue, Cho phép thao tác với các phần tử ở đầu và cuối hàng đợi.
+   + Nằm trong gói java.util.
+   + Deque vừa hoạt theo FIFO và LIFO.
+   + các phương thức chính:
+      - `addFirst(E e) và addLast(E e)` : Thêm phần tử đầu và cuối.
+      - `pollFirst() và pollLast(E e)` : Loại bỏ phần tử ở đầu và cuối hàng đợi.
+      - `peekFirst() và peekLast()` : Lấy phần tử đầu tiên và cuối cùng mà không loại bỏ của hàng đợi.

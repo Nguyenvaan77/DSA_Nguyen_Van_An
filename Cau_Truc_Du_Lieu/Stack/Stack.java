@@ -1,9 +1,7 @@
 package Stack;
 
 import java.util.Iterator;
-import java.util.Spliterator;
-import java.util.function.Consumer;
-
+import Node.Node;
 public class Stack<T> implements Iterable{
     public Node<T> first;
     public Stack() {
@@ -73,6 +71,12 @@ public class Stack<T> implements Iterable{
         if(isEmpty()) throw new IllegalArgumentException();
 
         return (T) first.data;
+    }
+
+    public Node<T> peekNode(){
+        if(isEmpty()) throw new IllegalArgumentException();
+
+        return first;
     }
 
     public boolean search(T value){
