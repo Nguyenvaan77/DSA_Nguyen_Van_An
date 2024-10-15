@@ -9,7 +9,7 @@ Java cung cấp rất nhiều loại hàng đợi, ví dụ có thể kể đế
 ## Điểm chú ý
 Các lớp triển khai Queue
 
-![](TEST/TEST/show/ran.png)
+![](Images/classtrienkhaiinterface.png)
 
 Queue là một giao diện(Interface) trong gói java.util.
 ## Các phương thức quan trọng của Queue API
