@@ -1,13 +1,25 @@
 # Cửa sổ trượt (Sliding window)
-Là kĩ thuật lập trình hiệu quả khi sử dụng để làm việc với các kiểu dữ liệu như `mảng` hoặc `chuỗi`, đặc biệt được sử dụng nhiều nhất xử lí các đoạn con có kích thước cố định hoặc bất định
+
+Là kĩ thuật lập trình hiệu quả khi sử dụng để làm việc với các kiểu dữ liệu như `mảng` hoặc `chuỗi`, đặc biệt được sử
+dụng nhiều nhất xử lí các đoạn con có kích thước cố định hoặc bất định
 
 ## Ý tưởng
-Kỹ thuật cửa sổ trượt hoạt động bằng cách lướt 1 cửa sổ tương có kích thước cố đinh hoặc thay đổi, chúng ta sẽ duyệt của sổ theo thứ tự từ trái sang phải kết hợp với điều kiện bài toán lên để giải quyết với mỗi lần cập nhật cửa sổ đến hết mảng. Bằng cách này thay vì phải duyệt lần lượt các phần tử con trong đoạn thì chúng ta sẽ chỉ cần sử lí bài toán mỗi khi phần tử mới được thêm vào khi cửa sổ duyệt đến
+
+Kỹ thuật cửa sổ trượt hoạt động bằng cách lướt 1 cửa sổ tương có kích thước cố đinh hoặc thay đổi, chúng ta sẽ duyệt của
+sổ theo thứ tự từ trái sang phải kết hợp với điều kiện bài toán lên để giải quyết với mỗi lần cập nhật cửa sổ đến hết
+mảng. Bằng cách này thay vì phải duyệt lần lượt các phần tử con trong đoạn thì chúng ta sẽ chỉ cần sử lí bài toán mỗi
+khi phần tử mới được thêm vào khi cửa sổ duyệt đến
 
 ### `Ví dụ : `
+
 1. Tìm tổng lớn nhất của dãy con gồm k phần tử :
-    1. Với những ai thấy còn mới chưa biết về kĩ thuật 2 con trỏ thì điều đầu tiên họ sẽ nghĩ tới kĩ thuật Code trâu hay duyệt trâu với tinh thần ta sẽ duyệt lần lượt từ đầu đến phần tử thứ n - k rồi tiếp tực duyệt k phần tử từ vị trí n - k để tính tổng từng đoạn. Điều đó sẽ tốn trung bình của chương trình là `O(n*k)`;
-    2. Với kĩ thuật 2 con trỏ, chúng ta sẽ bắt đầu với tổng các phần tử từ 0 đến k - 1 của mảng, rồi tiến hành cho cửa sổ trượt, mỗi lần cửa sổ trượt thêm 1 phần tử, thì tổng sẽ được cập nhật : tổng cộng thêm phần tử mới được đưa vào và trừ phần từ bị đẩy ra khỏi cửa sổ. Qua đó chương trình của chúng ta sẽ chỉ tồn trung binh `O(n)` thay vì O(n*k);
+    1. Với những ai thấy còn mới chưa biết về kĩ thuật 2 con trỏ thì điều đầu tiên họ sẽ nghĩ tới kĩ thuật Code trâu hay
+       duyệt trâu với tinh thần ta sẽ duyệt lần lượt từ đầu đến phần tử thứ n - k rồi tiếp tực duyệt k phần tử từ vị trí
+       n - k để tính tổng từng đoạn. Điều đó sẽ tốn trung bình của chương trình là `O(n*k)`;
+    2. Với kĩ thuật 2 con trỏ, chúng ta sẽ bắt đầu với tổng các phần tử từ 0 đến k - 1 của mảng, rồi tiến hành cho cửa
+       sổ trượt, mỗi lần cửa sổ trượt thêm 1 phần tử, thì tổng sẽ được cập nhật : tổng cộng thêm phần tử mới được đưa
+       vào và trừ phần từ bị đẩy ra khỏi cửa sổ. Qua đó chương trình của chúng ta sẽ chỉ tồn trung binh `O(n)` thay vì
+       O(n*k);
     3. Mã giả
    ```python
     def max_sum_subarray(arr, k):
@@ -24,8 +36,10 @@ Kỹ thuật cửa sổ trượt hoạt động bằng cách lướt 1 cửa s�
     
     return max_sum
    ```
-## Áp dụng 
-1. Khi bạn cần tính toán trên đoạn cố định của Mảng hãy 1 chuỗi 
+
+## Áp dụng
+
+1. Khi bạn cần tính toán trên đoạn cố định của Mảng hãy 1 chuỗi
 2. Khi cần tối ưu hóa cho các bài toàn xử lí trên dãy con liên tiếp của 1 mảng
 
 ## Coding

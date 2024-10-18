@@ -24,11 +24,24 @@ Queue là một giao diện(Interface) trong gói java.util.
     +   **`Trả về giá trị đầu tiên của hàng đợi mà không loại bỏ nó`**
       +   Nếu hàng đợi rỗng thì kết quả trả về sẽ là `null`
 ## `Các giao diện Interface mở rộng đáng chú ý của Hàng đợi`
-1. `Deque`
-   + Là giao diện mở rộng của Queue, Cho phép thao tác với các phần tử ở đầu và cuối hàng đợi.
-   + Nằm trong gói java.util.
-   + Deque vừa hoạt theo FIFO và LIFO.
-   + các phương thức chính:
-      - `addFirst(E e) và addLast(E e)` : Thêm phần tử đầu và cuối.
-      - `pollFirst() và pollLast(E e)` : Loại bỏ phần tử ở đầu và cuối hàng đợi.
-      - `peekFirst() và peekLast()` : Lấy phần tử đầu tiên và cuối cùng mà không loại bỏ của hàng đợi.
+1. `PriorityQueue `
+    + **Mô tả**: Hàng đợi ưu tiên, các phần tử được sắp xếp theo thứ tự tự nhiên hoặc theo bộ so sánh tùy chỉnh.
+    + **Đặc điểm**: Không đảm bảo theo cấu trúc LIFO, xử lí các phần tử ưu tiên trước.
+    + **Mã khởi tạo** :
+   ```java
+      Queue<Integer> queue = new PriorityQueue<>();
+   ```
+2. `LinkedList`
+    + Linkedlist thực thi cả Deque và Queue. sử dụng danh sách liên kết hoạt như 1 hàng đợi hoặc 1 ngăn xếp tùy biến.
+    + Có thể xử lí ở cả 2 đầu
+    + **Mã khởi tạo***:
+    ```java
+        Queue<Integer> queue = new LinkedList<>();
+    ```
+3. `ArayDeque`
+    + Hỗ trợ bằng mảng đầu và có thể thao tác từ 2 đầu.
+    + Hiệu suất cao hơn LinkedList trong hầu hết các thao tác.
+    + **Mã khởi tạo**:
+   ```java
+   Queue<E> queue = new ArrayDeQue<E>();
+    ```

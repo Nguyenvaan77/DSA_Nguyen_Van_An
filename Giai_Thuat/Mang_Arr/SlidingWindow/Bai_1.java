@@ -24,7 +24,7 @@ public class Bai_1 {
             if (tong - arr[i - 1] + arr[i + k - 1] > tong) {
                 tong = tong - arr[i - 1] + arr[i + k - 1];
             }
-            System.out.println("i = "+ i + " Tong = " + tong);
+            System.out.println("i = " + i + " Tong = " + tong);
         }
     }
 }

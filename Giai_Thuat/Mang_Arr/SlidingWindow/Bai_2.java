@@ -1,9 +1,7 @@
 package Mang_Arr.SlidingWindow;
 
-import java.util.Scanner;
-
 import java.util.HashSet;
-
+import java.util.Scanner;
 import java.util.Set;
 
 public class Bai_2 {
@@ -17,17 +15,17 @@ public class Bai_2 {
         int n = str.length();
         Set<Character> set = new HashSet<>();
 
-        for(int i=0;i<n;++i){
+        for (int i = 0; i < n; ++i) {
             Character word = str.charAt(i);
 
-            while(set.contains(word)){
+            while (set.contains(word)) {
                 set.remove(word);
                 ++start;
             }
 
             set.add(word);
 
-            if(lengt_max < i - start+ 1){
+            if (lengt_max < i - start + 1) {
                 lengt_max = i - start + 1;
             }
         }

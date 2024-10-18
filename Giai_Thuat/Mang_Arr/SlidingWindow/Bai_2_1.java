@@ -19,15 +19,15 @@ public class Bai_2_1 {
         for (int end = 0; end < n; ++end) {
             Character word = str.charAt(end);
 
-            while (set.contains(word)){
+            while (set.contains(word)) {
                 set.remove(str.charAt(start));
                 ++start;
             }
 
             set.add(word);
 
-            if(lengt_max < end - start + 1){
-                string_max = str.substring(start,end+1);
+            if (lengt_max < end - start + 1) {
+                string_max = str.substring(start, end + 1);
                 lengt_max = end - start + 1;
             }
         }
